@@ -22,3 +22,7 @@ Welcome to my portfolio! I'm Hades, a mechatronics engineering student with a pa
 Feel free to reach out if you'd like to collaborate or learn more about my work:
 - Email: koktim2003@gmail.com
 - GitHub: [DevilishDagon](https://github.com/DevilishDagon)
+
+## Testimonials
+
+I'm grateful to everyone who has supported and collaborated on my projects. If you'd like to share your experience or feedback, feel free to open an issue or contribute a pull request to add your testimonial here!
