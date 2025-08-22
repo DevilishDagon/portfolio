@@ -1,10 +1,14 @@
- Hades' Portfolio
+# Dagon's Portfolio
 
-Welcome to my portfolio! I'm Hades, a mechatronics engineering student with a passion for robotics and software. This repository highlights my completed and ongoing projects.
+Welcome to my portfolio! I'm Dagon, a mechatronics engineering student with a passion for robotics and software. This repository highlights my completed and ongoing projects, along with some additional information about me.
+
+## About Me
+
+I'm a student who loves to combine hardware and software to build smart systems. My interests include robotics, automation and machine learning. I enjoy exploring how code interacts with sensors and actuators to bring ideas to life.
 
 ## Completed Projects
 
-- **Face Recognition** - A face recognition module for the DaVinci smart locker project. Built using Python, OpenCV, and the face-recognition library, it loads and matches facial encodings to enable secure access. Key functionalities:
+- **Face Recognition** - A face recognition module for the DaVinci smart locker project. Built using Python, OpenCV and the face-recognition library, it loads and matches facial encodings to enable secure access. Key functionalities:
   - Load facial encodings from images
   - Generate new encodings for new users
   - Compare live camera input to stored encodings to verify identity
@@ -13,13 +17,21 @@ Welcome to my portfolio! I'm Hades, a mechatronics engineering student with a pa
 
 ## Ongoing Projects
 
-- **Metis** - An assistant platform combining a Discord bot with a Flask web dashboard. It uses asynchronous concurrency to manage bot interactions while serving a web interface. The goal is to integrate GPT-based features for advanced conversation and to connect with other services. I'm currently refining the architecture and adding new modules.
+- **Metis** - An assistant platform combining a Discord bot with a Flask web dashboard. It uses asynchronous concurrency to manage bot interactions while serving a web interface. The goal is to integrate GPT-based features for advanced conversation and to connect with other services. I'm refining the architecture and adding new modules.
 
-- **DungeonBuddy** - A digital companion for Dungeons & Dragons. This project will help manage character sheets, automate dice rolls, and provide quick rule look-ups. Work is in the early planning stage; check back soon for updates!
+- **DungeonBuddy** - A digital companion for Dungeons & Dragons. This project will help manage character sheets, automate dice rolls and provide quick rule look-ups. Work is in the early planning stage; check back soon for updates!
+
+## Skills & Technologies
+
+- **Programming languages:** Python, C and C++ for microcontrollers
+- **Frameworks & libraries:** Flask, Discord.py, OpenCV, face-recognition
+- **Hardware & robotics:** Sensors, actuators, microcontrollers (Arduino, Raspberry Pi)
+- **Version control:** Git, GitHub
 
 ## Contact
 
 Feel free to reach out if you'd like to collaborate or learn more about my work:
+
 - Email: koktim2003@gmail.com
 - GitHub: [DevilishDagon](https://github.com/DevilishDagon)
 
