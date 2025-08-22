@@ -1,4 +1,5 @@
-H# Hades' Portfolio
+ Hades' Portfolio
+
 Welcome to my portfolio! I'm Hades, a mechatronics engineering student with a passion for robotics and software. This repository highlights my completed and ongoing projects.
 
 ## Completed Projects
@@ -6,9 +7,9 @@ Welcome to my portfolio! I'm Hades, a mechatronics engineering student with a pa
 - **Face Recognition** - A face recognition module for the DaVinci smart locker project. Built using Python, OpenCV, and the face-recognition library, it loads and matches facial encodings to enable secure access. Key functionalities:
   - Load facial encodings from images
   - Generate new encodings for new users
-  
+  - Compare live camera input to stored encodings to verify identity
 
-  [View repository](https://github.com/DevilishDagon/facerec)
+[View repository](https://github.com/DevilishDagon/facerec)
 
 ## Ongoing Projects
 
