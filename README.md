@@ -66,7 +66,7 @@ A guided web workspace for drafting Xylem maintenance contracts. Customer, scope
 
 **Technologies:** JavaScript, PDF-lib, HTML/CSS
 
-[Open project details](https://devilishdagon.github.io/portfolio/#project=contractstudio) · [Visit project](https://xylem-contractstudio.timkok2003.chatgpt.site)
+[Open project details](https://devilishdagon.github.io/portfolio/#project=contractstudio) · [Visit project (sign-in required)](https://xylem-contractstudio.timkok2003.chatgpt.site)
 
 *Application capture · fictional example*
 

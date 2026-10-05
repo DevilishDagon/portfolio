@@ -101,7 +101,8 @@
     "images": [
       "assets/screenshots/contractstudio-1.jpg",
       "assets/screenshots/contractstudio-2.jpg"
-    ]
+    ],
+    "linkLabel": "Visit project (sign-in required)"
   },
   {
     "id": "zagreus-local",
