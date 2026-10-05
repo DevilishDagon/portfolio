@@ -1,6 +1,8 @@
-# Dagon — Projects & experiments
+# DevilishDagon — Projects & experiments
 
 A portfolio of personal AI, practical software, industrial automation, hardware and games.
+
+DevilishDagon is an alias I use for privacy reasons.
 
 **[Explore the portfolio](https://devilishdagon.github.io/portfolio/)** · [GitHub profile](https://github.com/DevilishDagon)
 
@@ -508,7 +510,7 @@ A static portfolio collecting software, hardware and automation projects in one 
 
 ## About
 
-I’m Dagon. I build projects across software, automation and hardware, from personal assistants to practical work tools and small interactive worlds.
+I’m DevilishDagon, an alias I use for privacy reasons. I build projects across software, automation and hardware, from personal assistants to practical work tools and small interactive worlds.
 
 [Contact by email](mailto:koktim2003@gmail.com) · [GitHub](https://github.com/DevilishDagon)
 
