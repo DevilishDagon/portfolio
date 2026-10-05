@@ -1,0 +1,824 @@
+[
+  {
+    "id": "metis",
+    "title": "Metis",
+    "category": "AI & agents",
+    "tagline": "A personal assistant, from conversation to a clearer day.",
+    "description": "Native iPhone and web interfaces bring together reminders, daily priorities, memory and plans from conversations. Calendar proposals stay reviewable, and Apple Health integration connects the native app to the assistant.",
+    "stack": [
+      "SwiftUI",
+      "Python",
+      "Flask",
+      "SQLite"
+    ],
+    "status": "Private application",
+    "repositories": [
+      "metis",
+      "metis-data"
+    ],
+    "features": [
+      "Daily workspace, reminders and calendar proposals",
+      "Native iOS companion with HealthKit integration",
+      "Persistent memory and controlled background tasks"
+    ],
+    "capture": "Application capture · isolated empty data",
+    "link": null,
+    "images": [
+      "assets/screenshots/metis-1.jpg",
+      "assets/screenshots/metis-2.jpg"
+    ]
+  },
+  {
+    "id": "sheetparcel",
+    "title": "SheetParcel",
+    "category": "Business tools",
+    "tagline": "Spreadsheets in. Customer-ready PDFs out.",
+    "description": "An offline browser tool that imports Excel or CSV price lists, applies customer-specific discounts and exports branded PDFs in a ZIP. Processing happens locally, with a public demo for trying the workflow.",
+    "stack": [
+      "JavaScript",
+      "SheetJS",
+      "jsPDF"
+    ],
+    "status": "Offline product",
+    "repositories": [],
+    "features": [
+      "Import and map spreadsheet columns",
+      "Generate customer-specific price lists",
+      "Export branded PDFs without an account"
+    ],
+    "capture": "Application capture · demo data",
+    "link": "https://sheetparcel.timkok2003.chatgpt.site",
+    "images": [
+      "assets/screenshots/sheetparcel-1.jpg",
+      "assets/screenshots/sheetparcel-2.jpg"
+    ]
+  },
+  {
+    "id": "mnemosyne",
+    "title": "Mnemosyne",
+    "category": "AI & agents",
+    "tagline": "A living memory for a long-running roleplay campaign.",
+    "description": "A Discord companion for The Long Way Home: it archives roleplay, retrieves source-grounded context, supports daily reviews and maintains railway displays. Public information and private DM material remain separate.",
+    "stack": [
+      "Python",
+      "Discord.py",
+      "SQLite"
+    ],
+    "status": "Private application",
+    "repositories": [],
+    "features": [
+      "Source-grounded campaign recall",
+      "Watched channel and thread ingestion",
+      "Timetables and daily review workflows"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/mnemosyne-1.jpg",
+      "assets/screenshots/mnemosyne-2.jpg"
+    ]
+  },
+  {
+    "id": "contractstudio",
+    "title": "Contractstudio",
+    "category": "Business tools",
+    "tagline": "Maintenance contracts, assembled with care.",
+    "description": "A guided web workspace for drafting Xylem maintenance contracts. Customer, scope and pricing steps feed a paginated preview and a branded PDF, with conditional clauses for different maintenance requirements.",
+    "stack": [
+      "JavaScript",
+      "PDF-lib",
+      "HTML/CSS"
+    ],
+    "status": "Web tool",
+    "repositories": [],
+    "features": [
+      "Guided customer, maintenance and pricing steps",
+      "Conditional contract content",
+      "Live document preview and PDF export"
+    ],
+    "capture": "Application capture · fictional example",
+    "link": "https://xylem-contractstudio.timkok2003.chatgpt.site",
+    "images": [
+      "assets/screenshots/contractstudio-1.jpg",
+      "assets/screenshots/contractstudio-2.jpg"
+    ]
+  },
+  {
+    "id": "zagreus-local",
+    "title": "Zagreus · Local AI",
+    "category": "AI & agents",
+    "tagline": "A small, private AI workspace on modest hardware.",
+    "description": "A self-hosted personal workspace with local model inference, chat history, memory review, evaluations and a Today view. Reviewed corrections can inform a separate preference-ranking model, with explicit promotion and rollback.",
+    "stack": [
+      "Python",
+      "SQLite",
+      "llama.cpp",
+      "JavaScript"
+    ],
+    "status": "Private application",
+    "repositories": [],
+    "features": [
+      "Local inference and persistent conversations",
+      "Tasks, priorities and in-app reminders",
+      "Reviewed feedback and controlled model changes"
+    ],
+    "capture": "Application capture · isolated empty data",
+    "link": null,
+    "images": [
+      "assets/screenshots/zagreus-local-1.jpg",
+      "assets/screenshots/zagreus-local-2.jpg"
+    ]
+  },
+  {
+    "id": "night-shift",
+    "title": "Night Shift",
+    "category": "Games & worlds",
+    "tagline": "An idle game about an office that gets stranger.",
+    "description": "A minimalist browser game that starts at one occupied desk and branches into Order, Control or Irregularity. Each route changes the mechanics, events and long-term progression, with local saves and offline progress.",
+    "stack": [
+      "JavaScript",
+      "HTML/CSS"
+    ],
+    "status": "Browser game",
+    "repositories": [
+      "idlegame"
+    ],
+    "features": [
+      "Three mechanically distinct doctrine routes",
+      "Route-aware upgrades and prestige",
+      "Local autosave and offline progression"
+    ],
+    "capture": "Application capture · fresh local playthrough",
+    "link": null,
+    "images": [
+      "assets/screenshots/night-shift-1.jpg",
+      "assets/screenshots/night-shift-2.jpg"
+    ]
+  },
+  {
+    "id": "dnd-tracker",
+    "title": "Expedition Ledger",
+    "category": "Games & worlds",
+    "tagline": "Keep the party moving, and the supplies honest.",
+    "description": "A browser dashboard for a tabletop expedition. It tracks remaining distance, rations and backpack capacity, and applies the different costs and distances of normal and haste travel.",
+    "stack": [
+      "Python",
+      "Flask",
+      "JavaScript"
+    ],
+    "status": "Web application",
+    "repositories": [
+      "dnd_tracker"
+    ],
+    "features": [
+      "Travel actions with explicit ration costs",
+      "Distance and inventory tracking",
+      "Persistent local expedition state"
+    ],
+    "capture": "Application capture · default sample state",
+    "link": null,
+    "images": [
+      "assets/screenshots/dnd-tracker-1.jpg",
+      "assets/screenshots/dnd-tracker-2.jpg"
+    ]
+  },
+  {
+    "id": "pico-display",
+    "title": "Pico OLED Companion",
+    "category": "Hardware",
+    "tagline": "A tiny display with a useful sense of time.",
+    "description": "A Raspberry Pi Pico 2 W display project for Codex allowance telemetry and solar information. The MicroPython firmware combines Wi-Fi fetching, OLED layouts, a setup portal and recovery tooling.",
+    "stack": [
+      "MicroPython",
+      "Pico 2 W",
+      "OLED"
+    ],
+    "status": "Hardware project",
+    "repositories": [],
+    "features": [
+      "Allowance telemetry with unavailable-data states",
+      "Solar and clock display layouts",
+      "Local setup and USB recovery tools"
+    ],
+    "capture": "Firmware-rendered preview · not a device photograph",
+    "link": null,
+    "images": [
+      "assets/screenshots/pico-display-1.png",
+      "assets/screenshots/pico-display-2.png"
+    ]
+  },
+  {
+    "id": "discount-tool",
+    "title": "Xylem Kortingsregeling",
+    "category": "Business tools",
+    "tagline": "From a customer number to a consistent discount document.",
+    "description": "A Windows application that reads an approved customer export and discount template, then produces a customer PDF, Excel copy and audit record. It validates daily data refreshes and handles ambiguous customer matches explicitly.",
+    "stack": [
+      "Python",
+      "Windows",
+      "Excel automation"
+    ],
+    "status": "Desktop application",
+    "repositories": [],
+    "features": [
+      "Validated customer lookup and scheme selection",
+      "Branded PDF and Excel output",
+      "Per-document audit trail"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/discount-tool-1.jpg",
+      "assets/screenshots/discount-tool-2.jpg"
+    ]
+  },
+  {
+    "id": "kpi-dashboard",
+    "title": "XBNL KPI Dashboard",
+    "category": "Business tools",
+    "tagline": "One place to explore business performance.",
+    "description": "A business dashboard organized around 28 KPI definitions across ten sections. Its service view is built for read-only maintenance-report retrieval, with status counts, completion context and source-refresh information. The portfolio captures use an isolated, unconnected instance.",
+    "stack": [
+      "JavaScript",
+      "TypeScript",
+      "Charts"
+    ],
+    "status": "Dashboard prototype",
+    "repositories": [],
+    "features": [
+      "Ten business sections with metric definitions",
+      "Service maintenance status and completion views",
+      "Explicit source connection and refresh status"
+    ],
+    "capture": "Application capture · disconnected source, example owner labels",
+    "link": null,
+    "images": [
+      "assets/screenshots/kpi-dashboard-1.jpg",
+      "assets/screenshots/kpi-dashboard-2.jpg"
+    ]
+  },
+  {
+    "id": "hermes",
+    "title": "Hermes",
+    "category": "Hardware",
+    "tagline": "A meeting assistant made for a Raspberry Pi.",
+    "description": "A compact recording workflow with a touchscreen-oriented interface. Hermes transcribes audio, produces summaries and can deliver recaps to Discord, with visible processing progress and temporary-file cleanup.",
+    "stack": [
+      "Python",
+      "Tkinter",
+      "Whisper",
+      "Raspberry Pi"
+    ],
+    "status": "Desktop application",
+    "repositories": [
+      "hermes"
+    ],
+    "features": [
+      "Record or import meeting audio",
+      "Transcription and summary pipeline",
+      "Compact interface for small displays"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/hermes-1.jpg",
+      "assets/screenshots/hermes-2.jpg"
+    ]
+  },
+  {
+    "id": "charon",
+    "title": "Charon",
+    "category": "AI & agents",
+    "tagline": "Structured memory for the Pantheon ecosystem.",
+    "description": "A focused archival service that stores records, applies a retention gate and retrieves relevant material with identifiers and confidence information. PostgreSQL, vector search and raw object storage support durable recall.",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "pgvector"
+    ],
+    "status": "Backend service",
+    "repositories": [
+      "charon"
+    ],
+    "features": [
+      "Structured archival with retention filtering",
+      "Ranked semantic retrieval",
+      "Soft deletion with deliberate purge"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/charon-1.jpg",
+      "assets/screenshots/charon-2.jpg"
+    ]
+  },
+  {
+    "id": "ananke",
+    "title": "Ananke",
+    "category": "AI & agents",
+    "tagline": "Turn accumulated signals into explicit forecasts.",
+    "description": "An experimental forecasting service that extracts structured features from events and models project risk, workload and routine trends. Forecasts carry a horizon, contributing factors and scenario information; this is a software experiment, not a validated clinical model.",
+    "stack": [
+      "Python",
+      "SQLite",
+      "Forecasting"
+    ],
+    "status": "Experimental service",
+    "repositories": [
+      "ananke"
+    ],
+    "features": [
+      "Deterministic feature extraction",
+      "Probabilistic forecasts and contributing factors",
+      "Recomputable snapshots from stored evidence"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/ananke-1.jpg",
+      "assets/screenshots/ananke-2.jpg"
+    ]
+  },
+  {
+    "id": "athena",
+    "title": "Athena",
+    "category": "AI & agents",
+    "tagline": "Translate forecasts into a bounded weekly plan.",
+    "description": "The strategy layer of Pantheon. Athena takes Ananke forecast snapshots and creates a limited weekly intervention plan, preserving plan history and optionally storing readable plans in Charon.",
+    "stack": [
+      "Python",
+      "SQLite",
+      "REST API"
+    ],
+    "status": "Backend prototype",
+    "repositories": [
+      "athena"
+    ],
+    "features": [
+      "Weekly planning from forecast snapshots",
+      "Plan and intervention history",
+      "Optional memory and notification integrations"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/athena-1.jpg",
+      "assets/screenshots/athena-2.jpg"
+    ]
+  },
+  {
+    "id": "hypnos",
+    "title": "Hypnos",
+    "category": "AI & agents",
+    "tagline": "Bring sleep records into structured memory.",
+    "description": "A sleep-data ingestion tool that normalizes sessions from configurable providers, including SleepCloud, and passes records to Charon. Deduplication and stored state help avoid importing the same session repeatedly.",
+    "stack": [
+      "Python",
+      "REST APIs",
+      "Charon"
+    ],
+    "status": "Data integration",
+    "repositories": [
+      "hypnos"
+    ],
+    "features": [
+      "Provider-based sleep session ingestion",
+      "Normalized duration and quality fields",
+      "Persistent deduplication state"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/hypnos-1.jpg",
+      "assets/screenshots/hypnos-2.jpg"
+    ]
+  },
+  {
+    "id": "helios",
+    "title": "Helios",
+    "category": "Developer tools",
+    "tagline": "A status board for a family of services.",
+    "description": "A FastAPI and HTMX dashboard that receives service heartbeats and displays health states. It gives the Pantheon ecosystem a common place to inspect online, offline and degraded services.",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "HTMX",
+      "SQLAlchemy"
+    ],
+    "status": "Monitoring service",
+    "repositories": [
+      "helios"
+    ],
+    "features": [
+      "Service heartbeat collection",
+      "Status summaries and health endpoints",
+      "Lightweight operational dashboard"
+    ],
+    "capture": "Application capture · isolated empty data",
+    "link": null,
+    "images": [
+      "assets/screenshots/helios-1.jpg",
+      "assets/screenshots/helios-2.jpg"
+    ]
+  },
+  {
+    "id": "clio",
+    "title": "Clio",
+    "category": "Developer tools",
+    "tagline": "A readable record of a day's development.",
+    "description": "A small tool that gathers GitHub activity for a date and turns it into a Markdown report. It separates provider access, configuration and report generation so a daily development summary is easy to produce.",
+    "stack": [
+      "Python",
+      "GitHub API",
+      "Markdown"
+    ],
+    "status": "Developer utility",
+    "repositories": [
+      "clio"
+    ],
+    "features": [
+      "Date-based Git activity collection",
+      "Readable Markdown reports",
+      "Configurable reporting pipeline"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/clio-1.jpg",
+      "assets/screenshots/clio-2.jpg"
+    ]
+  },
+  {
+    "id": "prometheus",
+    "title": "Prometheus",
+    "category": "Games & worlds",
+    "tagline": "A toolkit for the people behind the story.",
+    "description": "A self-hosted Discord bot for managing NPCs, locations and loose plot hooks. Slash commands and a lightweight dashboard help a game master organize narrative information stored in local JSON files.",
+    "stack": [
+      "Python",
+      "Discord.py",
+      "FastAPI",
+      "JSON"
+    ],
+    "status": "Private application",
+    "repositories": [
+      "prometheus"
+    ],
+    "features": [
+      "NPC and location records",
+      "Plot-hook tracking through Discord",
+      "Lightweight management dashboard"
+    ],
+    "capture": "Application capture · isolated empty data",
+    "link": null,
+    "images": [
+      "assets/screenshots/prometheus-1.jpg",
+      "assets/screenshots/prometheus-2.jpg"
+    ]
+  },
+  {
+    "id": "pantheon-mobile",
+    "title": "Pantheon Mobile",
+    "category": "Developer tools",
+    "tagline": "An Android control surface for your bots.",
+    "description": "A native Android app with an all-bots overview and individual service tabs. It polls status endpoints and exposes configurable actions, with confirmation dialogs and response previews.",
+    "stack": [
+      "Kotlin",
+      "Android",
+      "Jetpack Compose"
+    ],
+    "status": "Android application",
+    "repositories": [
+      "pantheon-mobile"
+    ],
+    "features": [
+      "All-bots dashboard and per-bot tabs",
+      "Configurable status checks",
+      "Confirmed actions and response previews"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/pantheon-mobile-1.jpg",
+      "assets/screenshots/pantheon-mobile-2.jpg"
+    ]
+  },
+  {
+    "id": "pantheon-core",
+    "title": "Pantheon Core",
+    "category": "Developer tools",
+    "tagline": "Shared foundations for independent services.",
+    "description": "A small Python package that centralizes the common pieces used by Pantheon bots: heartbeat integration, configuration loading, logging and shared status types.",
+    "stack": [
+      "Python",
+      "Shared library"
+    ],
+    "status": "Developer library",
+    "repositories": [
+      "pantheon_core"
+    ],
+    "features": [
+      "Common heartbeat client",
+      "Shared configuration and logging helpers",
+      "Consistent service status types"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/pantheon-core-1.jpg",
+      "assets/screenshots/pantheon-core-2.jpg"
+    ]
+  },
+  {
+    "id": "face-locker",
+    "title": "Face Locker",
+    "category": "Hardware",
+    "tagline": "Computer vision meets a physical access system.",
+    "description": "A face-recognition module for the DaVinci smart locker project. It combines camera input, facial encodings, user management and locker control with a Python desktop interface.",
+    "stack": [
+      "Python",
+      "OpenCV",
+      "Tkinter"
+    ],
+    "status": "Hardware application",
+    "repositories": [
+      "facerec"
+    ],
+    "features": [
+      "Face encoding and identity matching",
+      "Camera and desktop interface integration",
+      "User and locker management"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/face-locker-1.jpg",
+      "assets/screenshots/face-locker-2.jpg"
+    ]
+  },
+  {
+    "id": "grid-autopilot",
+    "title": "Exchange Grid Autopilot",
+    "category": "Developer tools",
+    "tagline": "A stateful grid-trading experiment.",
+    "description": "An automated trading prototype with a paper mode, persistent positions and configurable exposure limits. It implements a mean-reversion grid and records events in SQLite. No performance or profitability claims are made.",
+    "stack": [
+      "Python",
+      "SQLite",
+      "CCXT"
+    ],
+    "status": "Experimental utility",
+    "repositories": [
+      "exchange-grid-autopilot"
+    ],
+    "features": [
+      "Paper-mode experimentation",
+      "Persistent open and closed positions",
+      "Exposure, cooldown and loss limits"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/grid-autopilot-1.jpg",
+      "assets/screenshots/grid-autopilot-2.jpg"
+    ]
+  },
+  {
+    "id": "discord-template",
+    "title": "Discord AI Bot Template",
+    "category": "AI & agents",
+    "tagline": "A minimal starting point for a conversational bot.",
+    "description": "A compact Python template that responds to Discord mentions and keeps the last ten messages per channel as short-term context. It is a starting point for further bot development.",
+    "stack": [
+      "Python",
+      "Discord.py",
+      "OpenAI"
+    ],
+    "status": "Starter template",
+    "repositories": [
+      "discord_ai_bot_template"
+    ],
+    "features": [
+      "Mention-triggered responses",
+      "Per-channel short-term context",
+      "Small, readable project structure"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/discord-template-1.jpg",
+      "assets/screenshots/discord-template-2.jpg"
+    ]
+  },
+  {
+    "id": "zagreus-bot",
+    "title": "Zagreus · Discord",
+    "category": "AI & agents",
+    "tagline": "An early personal assistant, built around Discord.",
+    "description": "The earlier Zagreus agent connects a conversational core to calendar, weather and Discord adapters. A separate heartbeat integration reports service lifecycle and health to Helios.",
+    "stack": [
+      "Python",
+      "Discord",
+      "Calendar API"
+    ],
+    "status": "Earlier project",
+    "repositories": [
+      "zagreus"
+    ],
+    "features": [
+      "Conversational core with tool adapters",
+      "Calendar and weather integrations",
+      "Helios heartbeat reporting"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/zagreus-bot-1.jpg",
+      "assets/screenshots/zagreus-bot-2.jpg"
+    ]
+  },
+  {
+    "id": "metis-public-site",
+    "title": "Metis Public Site",
+    "category": "Web",
+    "tagline": "A clear introduction to a private assistant.",
+    "description": "A compact public site explaining how Metis turns plans from conversations into reviewable appointments. It also provides the project's privacy information and contact route.",
+    "stack": [
+      "HTML",
+      "CSS"
+    ],
+    "status": "Public website",
+    "repositories": [
+      "metis-public-site"
+    ],
+    "features": [
+      "Product explanation and appointment flow",
+      "Privacy information",
+      "Responsive, lightweight presentation"
+    ],
+    "capture": "Website capture",
+    "link": null,
+    "images": [
+      "assets/screenshots/metis-public-site-1.jpg",
+      "assets/screenshots/metis-public-site-2.jpg"
+    ]
+  },
+  {
+    "id": "xylem-ip",
+    "title": "Network Configuration Automation",
+    "category": "Business tools",
+    "tagline": "Repeatable configuration across an equipment list.",
+    "description": "A Python automation tool for a device-management workflow. It reads an equipment list, checks prerequisites, applies configuration steps and records per-device outcomes in Excel.",
+    "stack": [
+      "Python",
+      "Selenium",
+      "OpenPyXL"
+    ],
+    "status": "Internal automation",
+    "repositories": [
+      "xylemIPchange"
+    ],
+    "features": [
+      "Spreadsheet-driven device processing",
+      "Precondition checks and recovery steps",
+      "Immediate per-device outcome logging"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/xylem-ip-1.jpg",
+      "assets/screenshots/xylem-ip-2.jpg"
+    ]
+  },
+  {
+    "id": "xylem-modbus",
+    "title": "Modbus Configuration Uploader",
+    "category": "Business tools",
+    "tagline": "Batch configuration with a traceable result.",
+    "description": "A device-configuration utility that reuses an authenticated browser session to upload a CSV configuration and apply it. Results are recorded in CSV and, when configured, in the source tracking workbook.",
+    "stack": [
+      "Python",
+      "Selenium",
+      "Requests"
+    ],
+    "status": "Internal automation",
+    "repositories": [
+      "xylem_modbus_change"
+    ],
+    "features": [
+      "Batch configuration upload and apply",
+      "Session-aware request handling",
+      "CSV and Excel outcome tracking"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/xylem-modbus-1.jpg",
+      "assets/screenshots/xylem-modbus-2.jpg"
+    ]
+  },
+  {
+    "id": "firmware-updater",
+    "title": "Advantech Firmware Updater",
+    "category": "Hardware",
+    "tagline": "Make repeated firmware maintenance manageable.",
+    "description": "A Python maintenance utility for processing a list of industrial routers, navigating their management interface and recording firmware-update outcomes. It is presented without device addresses or credentials.",
+    "stack": [
+      "Python",
+      "Selenium",
+      "Excel"
+    ],
+    "status": "Internal utility",
+    "repositories": [],
+    "features": [
+      "Spreadsheet-driven device selection",
+      "Firmware upload workflow",
+      "Per-device progress and result logging"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/firmware-updater-1.jpg",
+      "assets/screenshots/firmware-updater-2.jpg"
+    ]
+  },
+  {
+    "id": "router-reboot",
+    "title": "Advantech Reboot Tool",
+    "category": "Hardware",
+    "tagline": "A repeatable maintenance workflow for router fleets.",
+    "description": "A batch utility that reads devices from Excel or CSV, handles management-interface login and performs a reboot workflow with time limits and per-device results.",
+    "stack": [
+      "Python",
+      "Selenium",
+      "CSV"
+    ],
+    "status": "Internal utility",
+    "repositories": [],
+    "features": [
+      "Excel and CSV input",
+      "Per-device timeout handling",
+      "Logged reboot outcomes"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/router-reboot-1.jpg",
+      "assets/screenshots/router-reboot-2.jpg"
+    ]
+  },
+  {
+    "id": "spreadsheet-reconcile",
+    "title": "Equipment List Reconciler",
+    "category": "Business tools",
+    "tagline": "Compare equipment lists in a desktop workspace.",
+    "description": "A PySide6 desktop tool for working with equipment spreadsheets. It uses configurable keys, including IP-address columns, and a table-based interface for reviewing and reconciling records.",
+    "stack": [
+      "Python",
+      "PySide6",
+      "pandas"
+    ],
+    "status": "Desktop utility",
+    "repositories": [],
+    "features": [
+      "Spreadsheet-based input",
+      "Configurable record-matching keys",
+      "Table views and progress reporting"
+    ],
+    "capture": "Documentation capture · public-safe project notes",
+    "link": null,
+    "images": [
+      "assets/screenshots/spreadsheet-reconcile-1.jpg",
+      "assets/screenshots/spreadsheet-reconcile-2.jpg"
+    ]
+  },
+  {
+    "id": "portfolio",
+    "title": "This Portfolio",
+    "category": "Web",
+    "tagline": "The project index you're looking at.",
+    "description": "A static portfolio collecting software, hardware and automation projects in one searchable gallery. Project descriptions, technology notes and clearly labelled captures are published independently of private application source code.",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GitHub Pages"
+    ],
+    "status": "Public website",
+    "repositories": [
+      "portfolio"
+    ],
+    "features": [
+      "Category filters and project search",
+      "Project detail and screenshot galleries",
+      "Static publishing on GitHub Pages"
+    ],
+    "capture": "Website capture",
+    "link": null,
+    "images": [
+      "assets/screenshots/portfolio-1.jpg",
+      "assets/screenshots/portfolio-2.jpg"
+    ]
+  }
+]
