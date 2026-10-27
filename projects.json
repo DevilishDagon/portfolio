@@ -3,62 +3,77 @@
     "id": "metis",
     "title": "Metis",
     "category": "AI & agents",
-    "tagline": "A personal assistant, from conversation to a clearer day.",
-    "description": "Native iPhone and web interfaces bring together reminders, daily priorities, memory and plans from conversations. Calendar proposals stay reviewable, and Apple Health integration connects the native app to the assistant.",
+    "tagline": "A personal companion that carries context into everyday action.",
+    "description": "Metis brings conversation, planning, reminders, personal memory and wellbeing into a native iPhone workspace. The current app is organized around Today, Plan, Ask, Care and Me, backed by a Python service that keeps actions tied to the records and permissions behind them.",
     "stack": [
       "SwiftUI",
       "Python",
       "Flask",
-      "SQLite"
+      "SQLite",
+      "HealthKit",
+      "EventKit"
     ],
-    "status": "Private application",
+    "status": "Personal companion · native iOS + Python backend",
     "repositories": [
       "metis",
       "metis-data"
     ],
     "features": [
-      "Daily workspace, reminders and calendar proposals",
-      "Native iOS companion with HealthKit integration",
-      "Persistent memory and controlled background tasks"
+      "A focused Today view with completion, snooze, hide and preference controls",
+      "Reviewable calendar and project changes from conversation",
+      "Tomorrow preparation with evidence and calendar freshness",
+      "Inspectable memory, projects, people and personal preferences",
+      "Offline action queue, replay protection and guarded undo",
+      "HealthKit, medication and Finance workspaces"
     ],
-    "capture": "Application capture · isolated empty data",
+    "capture": "Architecture diagram · Workflow diagram",
     "link": null,
     "images": [
-      "assets/screenshots/metis-1.jpg",
-      "assets/screenshots/metis-2.jpg"
-    ]
-  },
-  {
-    "id": "sheetparcel",
-    "title": "SheetParcel",
-    "category": "Business tools",
-    "tagline": "Spreadsheets in. Customer-ready PDFs out.",
-    "description": "An offline browser tool that imports Excel or CSV price lists, applies customer-specific discounts and exports branded PDFs in a ZIP. Processing happens locally, with a public demo for trying the workflow.",
-    "stack": [
-      "JavaScript",
-      "SheetJS",
-      "jsPDF"
+      "assets/screenshots/metis-current.svg",
+      "assets/screenshots/metis-actions.svg"
     ],
-    "status": "Offline product",
-    "repositories": [],
-    "features": [
-      "Import and map spreadsheet columns",
-      "Generate customer-specific price lists",
-      "Export branded PDFs without an account"
+    "featured": true,
+    "caseStudy": [
+      {
+        "title": "The problem",
+        "text": "Useful personal context is scattered across conversations, calendars, reminders and separate health or planning tools. A chat window alone does not turn that context into dependable follow-through. Metis is built to connect those pieces while keeping the owner in control of what becomes a saved fact, a reminder or a calendar change."
+      },
+      {
+        "title": "The experience",
+        "text": "Today presents a small selection of relevant items instead of an endless feed. A task can be completed, a reminder snoozed, or a suggestion hidden for the day; those actions deliberately mean different things. Plan brings together appointments, commitments, people and project work. Ask provides conversation with retained context, Care groups health and medication features, and Me gives a customizable personal overview with access to the wider feature library."
+      },
+      {
+        "title": "How it is built",
+        "text": "The SwiftUI client talks to a Flask mobile API. SQLite stores durable records and request receipts, while background jobs handle agreed follow-ups and synchronization. Calendar and project edits proposed in conversation are reviewed before application. Persistent request identifiers make retries safe, revision checks reject stale actions, and the mobile queue distinguishes cached content and unconfirmed changes from acknowledged results."
+      },
+      {
+        "title": "Current focus",
+        "text": "Recent work adds actionable Today cards, category preferences, preparation for tomorrow, configurable Me cards and project follow-through. The latest inspected native source uses Today, Plan, Ask, Care and Me. Health and Finance are personal organizational tools, not medical advice or proof of banking availability. This review checks source behavior; it does not claim a new App Store release, a physical-device test or a successful push delivery."
+      }
     ],
-    "capture": "Application capture · demo data",
-    "link": "https://sheetparcel.timkok2003.chatgpt.site",
-    "images": [
-      "assets/screenshots/sheetparcel-1.jpg",
-      "assets/screenshots/sheetparcel-2.jpg"
+    "mediaNote": "The former web HUD is no longer used to represent the current product. These source-grounded diagrams explain the current native app and action flow; they are not iPhone screenshots. A recent, sanitized device capture is still needed.",
+    "reviewedAt": "2026-10-27",
+    "media": [
+      {
+        "src": "assets/screenshots/metis-current.svg",
+        "kind": "Architecture diagram",
+        "caption": "Current native app areas and the supporting service. Diagram, not an app screenshot.",
+        "capturedAt": "2026-10-27"
+      },
+      {
+        "src": "assets/screenshots/metis-actions.svg",
+        "kind": "Workflow diagram",
+        "caption": "A proposed change passes through review, durable receipts and a guarded result. Diagram, not an app screenshot.",
+        "capturedAt": "2026-10-27"
+      }
     ]
   },
   {
     "id": "mnemosyne",
-    "title": "Mnemosyne",
+    "title": "Mnemosyne · The Long Way Home",
     "category": "AI & agents",
-    "tagline": "A living memory for a long-running roleplay campaign.",
-    "description": "A Discord companion for The Long Way Home: it archives roleplay, retrieves source-grounded context, supports daily reviews and maintains railway displays. Public information and private DM material remain separate.",
+    "tagline": "A persistent memory and operating system for a living campaign.",
+    "description": "Mnemosyne is the assistant-DM, archivist and railway bot behind The Long Way Home, an asynchronous Discord roleplaying campaign. It connects original scene evidence, a human-maintained Obsidian vault and persistent runtime state, while separating private preparation from player-facing information.",
     "stack": [
       "Python",
       "Discord.py",
@@ -67,15 +82,183 @@
     "status": "Private application",
     "repositories": [],
     "features": [
-      "Source-grounded campaign recall",
-      "Watched channel and thread ingestion",
-      "Timetables and daily review workflows"
+      "Discord scene and thread archival with original evidence links",
+      "Private research, preparation, recall and continuity checks",
+      "Persistent creative projects, alternatives, revisions and editorial preferences",
+      "Railway schedules, map overlays and day/night displays",
+      "Approval queues for suggestions and NPC drafts",
+      "Audience-aware retrieval and controlled vault synchronization"
     ],
-    "capture": "Documentation capture · public-safe project notes",
+    "capture": "Project artwork · Architecture diagram",
     "link": null,
     "images": [
-      "assets/screenshots/mnemosyne-1.jpg",
-      "assets/screenshots/mnemosyne-2.jpg"
+      "assets/screenshots/mnemosyne-map.png",
+      "assets/screenshots/mnemosyne-system.svg"
+    ],
+    "featured": true,
+    "caseStudy": [
+      {
+        "title": "The challenge",
+        "text": "A long-running asynchronous campaign accumulates more than lore: there are conversations, character beliefs, unfinished scenes, travel constraints and private plans. Mnemosyne helps the DM recover the right context without flattening uncertainty or treating every statement as an objective fact. Original attribution and the distinction between evidence and suggestion are central to the design."
+      },
+      {
+        "title": "A workspace for the DM",
+        "text": "The private DM desk supports questions, scene preparation, recall and continuity checks. Ongoing writing projects can retain alternatives, accepted lines and revisions across restarts. A briefing surfaces a small set of material items, while an inbox holds drafts and suggestions for review. Approving a draft does not automatically publish roleplay, and generated ideas do not become canon on their own."
+      },
+      {
+        "title": "Memory with boundaries",
+        "text": "Discord ingestion follows the configured RP watchlist and keeps child threads as separate scenes. Reconciliation can recover missed messages, while source links preserve a route back to the original evidence. SQLite holds runtime state and the Obsidian vault remains the human-readable knowledge base. Player retrieval checks access, private thread evidence is excluded from public boards, and secret material stays outside player-facing outputs."
+      },
+      {
+        "title": "Beyond conversation",
+        "text": "The same project runs deterministic campaign services: railway displays, a live-map overlay, travel context and the day/night cycle. This combination makes it a substantial systems project as well as a narrative tool. The image gallery includes the current map asset and an architecture diagram, not private Discord conversations or unreleased campaign secrets. The map is project artwork retained from September, reviewed again for this update."
+      }
+    ],
+    "mediaNote": "Original campaign railway artwork plus a public-safe architecture diagram. No private roleplay, player messages or DM secrets are shown.",
+    "reviewedAt": "2026-10-27",
+    "media": [
+      {
+        "src": "assets/screenshots/mnemosyne-map.png",
+        "kind": "Project artwork",
+        "caption": "Current campaign railway map asset; original artwork dated 1 September 2026.",
+        "capturedAt": "2026-09-01"
+      },
+      {
+        "src": "assets/screenshots/mnemosyne-system.svg",
+        "kind": "Architecture diagram",
+        "caption": "Archive, private preparation and public outputs remain separate. Diagram, not a Discord screenshot.",
+        "capturedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "kpi-dashboard",
+    "title": "XBNL Performance Dashboard",
+    "category": "Business tools",
+    "tagline": "From scattered operational sources to a readable performance workspace.",
+    "description": "A private Xylem performance dashboard spanning ten business sectors and 32 report screens. It combines read-only source integrations, carefully scoped maintenance reporting, sales and quotation views, record exploration and explicit freshness states in a single responsive interface.",
+    "stack": [
+      "JavaScript",
+      "Cloudflare Workers",
+      "D1 / SQLite",
+      "XDM",
+      "Archie"
+    ],
+    "status": "Private operational dashboard",
+    "repositories": [
+      "xylem-xbnl-dashboard"
+    ],
+    "features": [
+      "Ten sectors and a keyboard-accessible finder for 32 report screens",
+      "Scoped maintenance totals with interactive status exploration",
+      "Quotation, sales, follow-up and lead-time views",
+      "Search, filters, pagination and formula-safe CSV exports",
+      "Complete-snapshot publication and source freshness states",
+      "Responsive navigation, dark mode and a separate fictional-data demo"
+    ],
+    "capture": "Application screenshot",
+    "link": null,
+    "images": [
+      "assets/screenshots/xbnl-current-1.jpg",
+      "assets/screenshots/xbnl-current-2.jpg"
+    ],
+    "featured": true,
+    "caseStudy": [
+      {
+        "title": "The problem",
+        "text": "Business reporting spans maintenance records, CRM activity, quotations and workbook definitions. A useful dashboard needs to make those sources easier to navigate without silently inventing missing measures or confusing a raw record count with a business outcome. The project therefore treats source scope, definitions and freshness as part of the product."
+      },
+      {
+        "title": "The workspace",
+        "text": "The current interface has a sector sidebar, report tabs and a keyboard-accessible finder across 32 reports. Maintenance views combine scoped totals with an interactive status chart and a searchable record explorer. Related work covers sales activity, quotations, lead times, follow-ups and workbook-backed reporting. Appearance settings and responsive layouts support both desk and mobile use."
+      },
+      {
+        "title": "Data integrity",
+        "text": "Read-only XDM and Archie adapters feed stored snapshots. Maintenance totals use the defined managed-contract scope; records needing a responsibility review are kept separate from the headline KPI. Partial or failed refreshes do not replace the last complete snapshot. Missing inputs remain visible as unavailable. Filtering, sorting and export operate on the selected saved population, with CSV formula protection and context retained in exports."
+      },
+      {
+        "title": "Recent development",
+        "text": "The 27 October interface refresh simplifies the page hierarchy and keeps the operational controls close to the reports. Other recent work adds the report finder, more reliable filtering, maintenance exports and clearer source behavior. The portfolio screenshots run this current frontend with fictional totals and no live connectors. They demonstrate the interface, not company performance, customer records or a claim that every KPI has a verified data source."
+      }
+    ],
+    "mediaNote": "Captured 27 October 2026 from the current production frontend in an isolated local instance. All totals are fictional fixtures; employee names and internal links were removed from the capture copy. No live customer or sales data is included.",
+    "reviewedAt": "2026-10-27",
+    "media": [
+      {
+        "src": "assets/screenshots/xbnl-current-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Current maintenance interface with fictional totals and no live connectors.",
+        "capturedAt": "2026-10-27"
+      },
+      {
+        "src": "assets/screenshots/xbnl-current-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "Current report finder across 32 reports; isolated capture with no company records.",
+        "capturedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "sheetparcel",
+    "title": "SheetParcel",
+    "category": "Business tools",
+    "tagline": "One spreadsheet. A properly priced PDF for every customer.",
+    "description": "SheetParcel turns prepared Excel or CSV rows into branded customer-specific PDF price sheets. It handles column matching, discounts, validation, document layout and batch ZIP export locally in the browser, with a public demo and a downloadable offline edition.",
+    "stack": [
+      "JavaScript",
+      "SheetJS",
+      "jsPDF"
+    ],
+    "status": "Released offline utility + public demo",
+    "repositories": [],
+    "features": [
+      "Excel / CSV import with explicit column matching",
+      "Customer grouping and precise per-line discount rounding",
+      "Branding, currencies and English / Dutch document layouts",
+      "Validation for missing inputs, formulas and conflicting customer details",
+      "PDF previews and complete-batch ZIP export in the paid edition",
+      "Public example walkthrough, free demo and offline delivery"
+    ],
+    "capture": "Live website screenshot · Application screenshot",
+    "link": "https://sheetparcel.com",
+    "images": [
+      "assets/screenshots/sheetparcel-current-1.jpg",
+      "assets/screenshots/sheetparcel-current-2.jpg"
+    ],
+    "featured": true,
+    "caseStudy": [
+      {
+        "title": "The job it replaces",
+        "text": "Suppliers often already know their prices but still copy the same products into separate customer documents. SheetParcel focuses on that repetitive document step. The input is a prepared table with one row per customer and product; the output is a reviewable price sheet for each customer, using that customer’s supplied discount."
+      },
+      {
+        "title": "From rows to documents",
+        "text": "The user imports an XLSX or CSV file, chooses the worksheet and maps the columns. Branding controls set the business name, logo, colour, currency and document language. The preview switches between customers, while validation flags unsupported or ambiguous inputs before export. Price calculations use deliberate decimal handling so the number shown in the PDF matches the selected discount and rounding rules."
+      },
+      {
+        "title": "A local-first product",
+        "text": "Spreadsheet contents, logos and generated documents are processed on the device. The purchased edition opens as a standalone HTML application, with no server or account needed to use it. A separate public demo previews all example customers and exports the first customer with a demo footer. The full edition exports the batch as a ZIP with named PDFs."
+      },
+      {
+        "title": "Current scope",
+        "text": "The refreshed public site includes a worked example, an interactive price walkthrough and help preparing a small fictional sample. SheetParcel supports English and Dutch PDF layouts and publishes clear input limits. It is a price-sheet tool: it does not calculate VAT, issue invoices, join separate customer/product tables, synchronize inventory or send email. The gallery shows the current public site and its real demo using bundled fictional customers."
+      }
+    ],
+    "mediaNote": "Screenshots captured from sheetparcel.com and its working demo on 27 October 2026. The demo uses bundled fictional example rows. Product imagery is from the actual application.",
+    "reviewedAt": "2026-10-27",
+    "media": [
+      {
+        "src": "assets/screenshots/sheetparcel-current-1.jpg",
+        "kind": "Live website screenshot",
+        "caption": "Current sheetparcel.com storefront.",
+        "capturedAt": "2026-10-27"
+      },
+      {
+        "src": "assets/screenshots/sheetparcel-current-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "The working public demo with its three fictional example customers.",
+        "capturedAt": "2026-10-27"
+      }
     ]
   },
   {
@@ -83,26 +266,249 @@
     "title": "Contractstudio",
     "category": "Business tools",
     "tagline": "Maintenance contracts, assembled with care.",
-    "description": "A guided web workspace for drafting Xylem maintenance contracts. Customer, scope and pricing steps feed a paginated preview and a branded PDF, with conditional clauses for different maintenance requirements.",
+    "description": "Contractstudio is a guided Dutch workspace for assembling maintenance agreements. Five steps connect customer details, maintenance scope, optional services, pricing and review to the same paginated document model used for the live preview and PDF export.",
     "stack": [
       "JavaScript",
       "PDF-lib",
       "HTML/CSS"
     ],
-    "status": "Web tool",
+    "status": "Browser prototype · fictional examples",
     "repositories": [],
     "features": [
-      "Guided customer, maintenance and pricing steps",
-      "Conditional contract content",
-      "Live document preview and PDF export"
+      "Five-step customer, maintenance, service, pricing and review workflow",
+      "Optional service menu with schedules and coverage requirements",
+      "Separate service pricing or a fixed annual package",
+      "Shared drawing model for SVG preview and vector PDF export",
+      "Conditional clauses, NEN scope and installation terms",
+      "Concept documents with explicit open points when terms are incomplete"
     ],
-    "capture": "Application capture · fictional example",
-    "link": "https://xylem-contractstudio.timkok2003.chatgpt.site",
+    "capture": "Application screenshot",
+    "link": null,
     "images": [
-      "assets/screenshots/contractstudio-1.jpg",
-      "assets/screenshots/contractstudio-2.jpg"
+      "assets/screenshots/contractstudio-current-1.jpg",
+      "assets/screenshots/contractstudio-current-2.jpg"
     ],
-    "linkLabel": "Visit project (sign-in required)"
+    "featured": true,
+    "caseStudy": [
+      {
+        "title": "A document workflow with rules",
+        "text": "A maintenance agreement is more than a collection of form fields. The selected maintenance work, service coverage, quantities and conditions must agree with the wording and prices in the final document. Contractstudio makes that assembly process visible through a guided editor and a page-by-page preview."
+      },
+      {
+        "title": "What the user controls",
+        "text": "The five-step flow moves from customer and project information to maintenance, a service menu, prices and a final review. Optional services cover cleaning, connectivity, breakdown arrangements, supervision, response terms and planned overhaul. Services can be priced individually or covered by an annual package, with schedules and coverage requirements recorded alongside them."
+      },
+      {
+        "title": "One model for preview and export",
+        "text": "A normalized contract object feeds a shared document drawing model. The browser renders that model as SVG for the live preview and as a vector PDF with embedded fonts for export. Conditional content follows the selected scope, and integer-cent calculations keep the document totals consistent with the editor. Missing prices are not silently treated as zero."
+      },
+      {
+        "title": "Honest prototype boundaries",
+        "text": "Incomplete service terms produce an explicitly marked concept with open points and no signature block. The prototype uses fictional customer data, stores entries only in page memory and has no live business-record integration. Portfolio captures also substitute invented tariffs. Final source ownership, approved pricing rules, persistence and access control remain requirements for a production rollout."
+      }
+    ],
+    "mediaNote": "Current local prototype captured 27 October 2026. Fictional customer information and invented tariffs were used in the capture copy. The production source was not modified.",
+    "reviewedAt": "2026-10-27",
+    "media": [
+      {
+        "src": "assets/screenshots/contractstudio-current-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Customer editor and live PDF preview with fictional customer data and invented tariffs.",
+        "capturedAt": "2026-10-27"
+      },
+      {
+        "src": "assets/screenshots/contractstudio-current-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "The current service-menu workflow in the isolated prototype.",
+        "capturedAt": "2026-10-27"
+      }
+    ]
+  },
+  {
+    "id": "cerberus",
+    "title": "Cerberus · Pico Desk Companion",
+    "category": "Hardware",
+    "tagline": "Three heads, a little personality, and no chores.",
+    "description": "A procedural three-headed pixel companion for the Pico OLED. A small Windows helper sends coarse local activity states over USB, allowing the firmware to react with curiosity, play, rest and occasional surprises without recording what the person is doing.",
+    "stack": [
+      "MicroPython",
+      "Python",
+      "USB serial",
+      "SSD1309 OLED"
+    ],
+    "status": "Packaged prototype · hardware validation pending",
+    "repositories": [],
+    "link": null,
+    "featured": true,
+    "reviewedAt": "2026-10-27",
+    "features": [
+      "48 behaviors × 3 leading heads × 4 reaction styles",
+      "Coarse local activity and break awareness",
+      "Random quiet gaps and recent-action avoidance",
+      "Sleep and return greetings without persistent care tasks",
+      "Local-only pet mode with no app names, keystrokes or browsing history"
+    ],
+    "caseStudy": [
+      {
+        "title": "The idea",
+        "text": "Cerberus turns the existing Pico display into a small desk companion. The three heads have different reactions, but there is no feeding system, streak, health bar or obligation to look after it. The experience is intended to be enjoyable background company rather than another task to maintain."
+      },
+      {
+        "title": "Procedural character",
+        "text": "The 1.0.0 package combines 48 behaviors and events with three leading heads and four reaction styles, yielding 576 choreographed variants. Episodes have an arrival, reaction and resolution. Random quiet gaps, cooldowns and recent-action avoidance keep the display from repeating one animation on a rigid timer. Sleep narrows the repertoire, and returning from a break can trigger a greeting."
+      },
+      {
+        "title": "Privacy by construction",
+        "text": "A local Windows helper uses idle-time information to estimate broad active and resting states, then sends a small mood/focus message over the existing USB serial connection. It does not transmit typed text, application names, screenshots, URLs or browsing history. Reading or watching a meeting can resemble inactivity, so this is a coarse interaction cue rather than productivity measurement."
+      },
+      {
+        "title": "Current state",
+        "text": "The latest available package and original animation assets are version 1.0.0 from 21 October 2026. The host rendering and package work were validated separately from physical hardware. The gallery contains the actual behavior sheet and firmware-rendered animation; it does not imply that a Pico was connected or updated during this portfolio refresh."
+      }
+    ],
+    "mediaNote": "Original 1.0.0 behavior sheet and firmware-rendered GIF, produced 21 October 2026 and reviewed 27 October. These are rendered assets, not device photographs.",
+    "media": [
+      {
+        "src": "assets/screenshots/cerberus-behaviors.png",
+        "kind": "Firmware-rendered artwork",
+        "caption": "Behavior sheet from the original 1.0.0 package.",
+        "capturedAt": "2026-10-21"
+      },
+      {
+        "src": "assets/screenshots/cerberus-animation.gif",
+        "kind": "Firmware animation",
+        "caption": "Original procedural animation preview. Motion can be enabled in the gallery.",
+        "capturedAt": "2026-10-21"
+      }
+    ],
+    "images": [
+      "assets/screenshots/cerberus-behaviors.png",
+      "assets/screenshots/cerberus-animation.gif"
+    ],
+    "capture": "Firmware-rendered artwork · Firmware animation"
+  },
+  {
+    "id": "pico-display",
+    "title": "Pico OLED Companion",
+    "category": "Hardware",
+    "tagline": "A tiny display with a useful sense of time.",
+    "description": "A Raspberry Pi Pico 2 W and monochrome OLED project that makes small pieces of desktop information visible on a dedicated physical display. The firmware combines quota/status pages, a local clock and solar information with USB-assisted recovery and explicit stale or unavailable states.",
+    "stack": [
+      "MicroPython",
+      "Pico 2 W",
+      "OLED"
+    ],
+    "status": "Hardware project",
+    "repositories": [],
+    "features": [
+      "Allowance telemetry with unavailable-data states",
+      "Solar and clock display layouts",
+      "Local setup and USB recovery tools"
+    ],
+    "capture": "Firmware-rendered preview · not a device photograph",
+    "link": null,
+    "images": [
+      "assets/screenshots/pico-display-1.png",
+      "assets/screenshots/pico-display-2.png"
+    ],
+    "featured": true,
+    "caseStudy": [
+      {
+        "title": "A glanceable physical interface",
+        "text": "The aim is to put compact, useful information on a small desk display without turning it into another full application window. MicroPython firmware drives a 128 × 64 monochrome OLED, balancing large readable values with secondary context. Different pages serve quota/status, time and solar information."
+      },
+      {
+        "title": "Resilience on constrained hardware",
+        "text": "The project includes USB helper and recovery workflows alongside standalone network behavior. Missing or expired data is treated as unavailable or stale instead of becoming a false zero. Firmware packages are staged and verified during installation, and saved device configuration needs to survive updates. The compact monochrome layout prioritizes the current value and its freshness, with secondary information placed on separate pages."
+      },
+      {
+        "title": "A growing hardware platform",
+        "text": "Later work builds on the same Pico and OLED setup for a local activity-reactive Cerberus companion, presented as its own project in this portfolio. That makes the original display a platform for both practical telemetry and playful interaction. The two projects have different data paths: a local pet mode does not imply that every quota-display mode is offline."
+      },
+      {
+        "title": "What the pictures prove",
+        "text": "The retained display images were rendered by the firmware tooling on 30 September 2026. They show the original page designs and are labelled historical firmware previews. They are not new device photographs, evidence of today’s account allowance, or proof that the latest package has been installed on connected hardware."
+      }
+    ],
+    "mediaNote": "Historical firmware-rendered previews from 30 September 2026, reviewed for this update. No recent physical-device photograph is available. See Cerberus for the newer companion artwork.",
+    "reviewedAt": "2026-10-27",
+    "media": [
+      {
+        "src": "assets/screenshots/pico-display-1.png",
+        "kind": "Firmware preview",
+        "caption": "Firmware-rendered preview · not a device photograph",
+        "capturedAt": "2026-09-30"
+      },
+      {
+        "src": "assets/screenshots/pico-display-2.png",
+        "kind": "Firmware preview",
+        "caption": "Firmware-rendered preview · not a device photograph",
+        "capturedAt": "2026-09-30"
+      }
+    ]
+  },
+  {
+    "id": "hades-remote",
+    "title": "Hades Remote",
+    "category": "Hardware",
+    "tagline": "A theatrical animation, delivered through a controlled device channel.",
+    "description": "A Windows animation client and owner-controlled relay for playing a fixed Hades visual on enrolled devices. The project combines installation packaging, a per-device command channel, a phone-oriented control surface and visible acknowledgement states.",
+    "stack": [
+      "PowerShell",
+      "Python",
+      "Windows",
+      "HTTPS relay"
+    ],
+    "status": "Windows client and controller",
+    "repositories": [],
+    "link": null,
+    "featured": true,
+    "reviewedAt": "2026-10-27",
+    "features": [
+      "Fixed bundled animation with local Escape dismissal",
+      "Per-device enrollment and encrypted device tokens",
+      "Owner-authenticated phone control",
+      "Playback acknowledgement and removal status",
+      "Windows installer plus optional Python integration"
+    ],
+    "caseStudy": [
+      {
+        "title": "The experience",
+        "text": "Hades Remote is a small theatrical interaction: an owner can request a fixed animation on an enrolled Windows PC. The visual is the point of the application. The client is intentionally limited to its bundled playback and its own removal rather than providing an arbitrary remote shell or a personal-file transfer tool."
+      },
+      {
+        "title": "The system",
+        "text": "A Windows client contacts an HTTPS relay for its permitted commands. A separate controller manages playback requests and device status. The phone-oriented interface supports individual or grouped actions and shows queued or acknowledged results, so issuing a request is distinct from proving that the destination has performed it."
+      },
+      {
+        "title": "Packaging and boundaries",
+        "text": "The normal installer uses Windows components already present on supported desktops, while an optional Python package supports explicit scripted setup. Device tokens are encrypted for the installing account, and device credentials do not grant controller privileges. Removal has a confirmation flow and tracks acknowledgement; offline devices can remain pending. The project’s trust boundary depends on authorized enrollment, owner identity and the security of the devices and relay."
+      },
+      {
+        "title": "Portfolio presentation",
+        "text": "The current local distribution includes the 1.2.2 Windows installer. This portfolio shows the original animation artwork and a simplified system diagram. It deliberately omits the private controller address, device list, tokens and actual control screens. No installation, enrollment, broadcast or remote removal was performed to create this case study."
+      }
+    ],
+    "mediaNote": "Original animation artwork and a public-safe system diagram reviewed 27 October 2026. No enrolled device identities, controller addresses or credentials are shown.",
+    "media": [
+      {
+        "src": "assets/screenshots/hades-art.png",
+        "kind": "Project artwork",
+        "caption": "Original bundled Hades visual; reviewed 27 October 2026.",
+        "capturedAt": "2026-10-20"
+      },
+      {
+        "src": "assets/screenshots/hades-system.svg",
+        "kind": "Architecture diagram",
+        "caption": "Owner control, relay and enrolled client. No real endpoints or device identifiers.",
+        "capturedAt": "2026-10-27"
+      }
+    ],
+    "images": [
+      "assets/screenshots/hades-art.png",
+      "assets/screenshots/hades-system.svg"
+    ],
+    "capture": "Project artwork · Architecture diagram"
   },
   {
     "id": "zagreus-local",
@@ -128,7 +534,22 @@
     "images": [
       "assets/screenshots/zagreus-local-1.jpg",
       "assets/screenshots/zagreus-local-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/zagreus-local-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · isolated empty data",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/zagreus-local-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · isolated empty data",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Retained from the 5 October portfolio review. The date is shown so this is not mistaken for a newly captured interface."
   },
   {
     "id": "night-shift",
@@ -154,7 +575,23 @@
     "images": [
       "assets/screenshots/night-shift-1.jpg",
       "assets/screenshots/night-shift-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/night-shift-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · fresh local playthrough",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/night-shift-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · fresh local playthrough",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Retained from the 5 October portfolio review. The date is shown so this is not mistaken for a newly captured interface.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "dnd-tracker",
@@ -181,32 +618,22 @@
     "images": [
       "assets/screenshots/dnd-tracker-1.jpg",
       "assets/screenshots/dnd-tracker-2.jpg"
-    ]
-  },
-  {
-    "id": "pico-display",
-    "title": "Pico OLED Companion",
-    "category": "Hardware",
-    "tagline": "A tiny display with a useful sense of time.",
-    "description": "A Raspberry Pi Pico 2 W display project for Codex allowance telemetry and solar information. The MicroPython firmware combines Wi-Fi fetching, OLED layouts, a setup portal and recovery tooling.",
-    "stack": [
-      "MicroPython",
-      "Pico 2 W",
-      "OLED"
     ],
-    "status": "Hardware project",
-    "repositories": [],
-    "features": [
-      "Allowance telemetry with unavailable-data states",
-      "Solar and clock display layouts",
-      "Local setup and USB recovery tools"
+    "media": [
+      {
+        "src": "assets/screenshots/dnd-tracker-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · default sample state",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/dnd-tracker-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · default sample state",
+        "capturedAt": "2026-10-05"
+      }
     ],
-    "capture": "Firmware-rendered preview · not a device photograph",
-    "link": null,
-    "images": [
-      "assets/screenshots/pico-display-1.png",
-      "assets/screenshots/pico-display-2.png"
-    ]
+    "mediaNote": "Retained from the 5 October portfolio review. The date is shown so this is not mistaken for a newly captured interface."
   },
   {
     "id": "discount-tool",
@@ -231,32 +658,22 @@
     "images": [
       "assets/screenshots/discount-tool-1.jpg",
       "assets/screenshots/discount-tool-2.jpg"
-    ]
-  },
-  {
-    "id": "kpi-dashboard",
-    "title": "XBNL KPI Dashboard",
-    "category": "Business tools",
-    "tagline": "One place to explore business performance.",
-    "description": "A business dashboard organized around 28 KPI definitions across ten sections. Its service view is built for read-only maintenance-report retrieval, with status counts, completion context and source-refresh information. The portfolio captures use an isolated, unconnected instance.",
-    "stack": [
-      "JavaScript",
-      "TypeScript",
-      "Charts"
     ],
-    "status": "Dashboard prototype",
-    "repositories": [],
-    "features": [
-      "Ten business sections with metric definitions",
-      "Service maintenance status and completion views",
-      "Explicit source connection and refresh status"
+    "media": [
+      {
+        "src": "assets/screenshots/discount-tool-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/discount-tool-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
     ],
-    "capture": "Application capture · disconnected source, example owner labels",
-    "link": null,
-    "images": [
-      "assets/screenshots/kpi-dashboard-1.jpg",
-      "assets/screenshots/kpi-dashboard-2.jpg"
-    ]
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "hermes",
@@ -284,7 +701,23 @@
     "images": [
       "assets/screenshots/hermes-1.jpg",
       "assets/screenshots/hermes-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/hermes-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/hermes-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "charon",
@@ -312,7 +745,23 @@
     "images": [
       "assets/screenshots/charon-1.jpg",
       "assets/screenshots/charon-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/charon-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/charon-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "ananke",
@@ -339,7 +788,22 @@
     "images": [
       "assets/screenshots/ananke-1.jpg",
       "assets/screenshots/ananke-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/ananke-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/ananke-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "athena",
@@ -366,7 +830,22 @@
     "images": [
       "assets/screenshots/athena-1.jpg",
       "assets/screenshots/athena-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/athena-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/athena-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "hypnos",
@@ -393,7 +872,22 @@
     "images": [
       "assets/screenshots/hypnos-1.jpg",
       "assets/screenshots/hypnos-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/hypnos-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/hypnos-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "helios",
@@ -421,7 +915,23 @@
     "images": [
       "assets/screenshots/helios-1.jpg",
       "assets/screenshots/helios-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/helios-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · isolated empty data",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/helios-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · isolated empty data",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Retained from the 5 October portfolio review. The date is shown so this is not mistaken for a newly captured interface.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "clio",
@@ -448,7 +958,23 @@
     "images": [
       "assets/screenshots/clio-1.jpg",
       "assets/screenshots/clio-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/clio-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/clio-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "prometheus",
@@ -476,7 +1002,23 @@
     "images": [
       "assets/screenshots/prometheus-1.jpg",
       "assets/screenshots/prometheus-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/prometheus-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · isolated empty data",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/prometheus-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "Application capture · isolated empty data",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Retained from the 5 October portfolio review. The date is shown so this is not mistaken for a newly captured interface.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "pantheon-mobile",
@@ -503,7 +1045,23 @@
     "images": [
       "assets/screenshots/pantheon-mobile-1.jpg",
       "assets/screenshots/pantheon-mobile-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/pantheon-mobile-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/pantheon-mobile-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "pantheon-core",
@@ -529,7 +1087,22 @@
     "images": [
       "assets/screenshots/pantheon-core-1.jpg",
       "assets/screenshots/pantheon-core-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/pantheon-core-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/pantheon-core-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "face-locker",
@@ -556,7 +1129,22 @@
     "images": [
       "assets/screenshots/face-locker-1.jpg",
       "assets/screenshots/face-locker-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/face-locker-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/face-locker-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "grid-autopilot",
@@ -583,7 +1171,23 @@
     "images": [
       "assets/screenshots/grid-autopilot-1.jpg",
       "assets/screenshots/grid-autopilot-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/grid-autopilot-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/grid-autopilot-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "discord-template",
@@ -610,7 +1214,23 @@
     "images": [
       "assets/screenshots/discord-template-1.jpg",
       "assets/screenshots/discord-template-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/discord-template-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/discord-template-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "zagreus-bot",
@@ -637,7 +1257,23 @@
     "images": [
       "assets/screenshots/zagreus-bot-1.jpg",
       "assets/screenshots/zagreus-bot-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/zagreus-bot-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/zagreus-bot-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application.",
+    "reviewedAt": "2026-10-27"
   },
   {
     "id": "metis-public-site",
@@ -663,7 +1299,22 @@
     "images": [
       "assets/screenshots/metis-public-site-1.jpg",
       "assets/screenshots/metis-public-site-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/metis-public-site-1.jpg",
+        "kind": "Application screenshot",
+        "caption": "Website capture",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/metis-public-site-2.jpg",
+        "kind": "Application screenshot",
+        "caption": "Website capture",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Retained from the 5 October portfolio review. The date is shown so this is not mistaken for a newly captured interface."
   },
   {
     "id": "xylem-ip",
@@ -690,7 +1341,22 @@
     "images": [
       "assets/screenshots/xylem-ip-1.jpg",
       "assets/screenshots/xylem-ip-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/xylem-ip-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/xylem-ip-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "xylem-modbus",
@@ -717,7 +1383,22 @@
     "images": [
       "assets/screenshots/xylem-modbus-1.jpg",
       "assets/screenshots/xylem-modbus-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/xylem-modbus-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/xylem-modbus-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "firmware-updater",
@@ -742,7 +1423,22 @@
     "images": [
       "assets/screenshots/firmware-updater-1.jpg",
       "assets/screenshots/firmware-updater-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/firmware-updater-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/firmware-updater-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "router-reboot",
@@ -767,7 +1463,22 @@
     "images": [
       "assets/screenshots/router-reboot-1.jpg",
       "assets/screenshots/router-reboot-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/router-reboot-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/router-reboot-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "spreadsheet-reconcile",
@@ -792,7 +1503,22 @@
     "images": [
       "assets/screenshots/spreadsheet-reconcile-1.jpg",
       "assets/screenshots/spreadsheet-reconcile-2.jpg"
-    ]
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/spreadsheet-reconcile-1.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      },
+      {
+        "src": "assets/screenshots/spreadsheet-reconcile-2.jpg",
+        "kind": "Documentation preview",
+        "caption": "Documentation capture · public-safe project notes",
+        "capturedAt": "2026-10-05"
+      }
+    ],
+    "mediaNote": "Public-safe documentation previews prepared on 5 October 2026. These are not screenshots of a running application."
   },
   {
     "id": "portfolio",
@@ -815,11 +1541,27 @@
       "Project detail and screenshot galleries",
       "Static publishing on GitHub Pages"
     ],
-    "capture": "Website capture",
+    "capture": "Website screenshot",
     "link": null,
     "images": [
-      "assets/screenshots/portfolio-1.jpg",
-      "assets/screenshots/portfolio-2.jpg"
-    ]
+      "assets/screenshots/portfolio-current-1.jpg",
+      "assets/screenshots/portfolio-current-2.jpg"
+    ],
+    "media": [
+      {
+        "src": "assets/screenshots/portfolio-current-1.jpg",
+        "kind": "Website screenshot",
+        "caption": "The current portfolio introduction.",
+        "capturedAt": "2026-10-27"
+      },
+      {
+        "src": "assets/screenshots/portfolio-current-2.jpg",
+        "kind": "Website screenshot",
+        "caption": "The expanded selected-work section and featured case studies.",
+        "capturedAt": "2026-10-27"
+      }
+    ],
+    "mediaNote": "Current portfolio captured locally on 27 October 2026, including the expanded case-study section.",
+    "reviewedAt": "2026-10-27"
   }
 ]
