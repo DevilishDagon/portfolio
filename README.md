@@ -4,7 +4,7 @@ DevilishDagon is an alias I use for privacy reasons.
 
 **[Explore the portfolio](https://devilishdagon.github.io/portfolio/)** · [GitHub profile](https://github.com/DevilishDagon)
 
-33 projects, including 8 detailed case studies. The directory covers 23 GitHub repositories plus local projects. Private application source stays private. Latest substantive source review: 2026-10-27.
+33 projects, including 8 detailed case studies. The directory covers 23 GitHub repositories plus local projects. Private application source stays private. Latest substantive source review: 2026-11-02.
 
 Every gallery image has a type, date and caption. Real screenshots, fictional-data demonstrations, original artwork, diagrams and retained documentation previews are distinguished. See [image provenance](CAPTURES.md).
 
@@ -23,11 +23,11 @@ Every gallery image has a type, date and caption. Real screenshots, fictional-da
 
 ## Metis
 
-Metis brings conversation, planning, reminders, personal memory and wellbeing into a native iPhone workspace. The current app is organized around Today, Plan, Ask, Care and Me, backed by a Python service that keeps actions tied to the records and permissions behind them.
+Metis brings conversation, planning, reminders, personal memory and wellbeing into a native iPhone workspace. Its Today, Plan, Ask, Care and Me areas connect to a Python service, with reviewable actions and opt-in conversation starters that respect context and notification preferences.
 
 **Type:** Personal companion · native iOS + Python backend · **Technologies:** SwiftUI, Python, Flask, SQLite, HealthKit, EventKit
 
-Source reviewed: 2026-10-27.
+Source reviewed: 2026-11-02.
 
 ### The problem
 
@@ -41,9 +41,13 @@ Today presents a small selection of relevant items instead of an endless feed. A
 
 The SwiftUI client talks to a Flask mobile API. SQLite stores durable records and request receipts, while background jobs handle agreed follow-ups and synchronization. Calendar and project edits proposed in conversation are reviewed before application. Persistent request identifiers make retries safe, revision checks reject stale actions, and the mobile queue distinguishes cached content and unconfirmed changes from acknowledged results.
 
+### Starting the conversation
+
+The latest backend work lets Metis open a conversation in the iPhone app when the owner opts in. A fresh, deliberately shared workplace label can prompt a short greeting; an afternoon check-in can follow a period without interaction. Quiet hours, notification permission, daily limits and spacing control when a message is allowed, and unanswered starters cause it to back off. Chat history, the From Metis inbox and the push request are saved together, with duplicate protection. Replies return to the same conversation. This uses shared place context, not a claim of continuous tracking or exact arrival detection.
+
 ### Current focus
 
-Recent work adds actionable Today cards, category preferences, preparation for tomorrow, configurable Me cards and project follow-through. The latest inspected native source uses Today, Plan, Ask, Care and Me. Health and Finance are personal organizational tools, not medical advice or proof of banking availability. This review checks source behavior; it does not claim a new App Store release, a physical-device test or a successful push delivery.
+Current work combines proactive conversation with actionable Today cards, tomorrow preparation, configurable Me cards and project follow-through. The native app retains Today, Plan, Ask, Care and Me. Health and Finance are personal organizational tools, not medical advice or proof of banking availability. The conversation-starter implementation is verified in source; this portfolio review does not establish notification display on a physical phone or a new app release. Native test renders illustrate the Me interface with unavailable data and default settings, alongside diagrams that explain the architecture.
 
 **Capabilities**
 
@@ -53,10 +57,11 @@ Recent work adds actionable Today cards, category preferences, preparation for t
 - Inspectable memory, projects, people and personal preferences
 - Offline action queue, replay protection and guarded undo
 - HealthKit, medication and Finance workspaces
+- Opt-in iPhone conversation starters with quiet hours, daily limits and unanswered-message backoff
 
 [Open project details](https://devilishdagon.github.io/portfolio/#project=metis)
 
-The former web HUD is no longer used to represent the current product. These source-grounded diagrams explain the current native app and action flow; they are not iPhone screenshots. A recent, sanitized device capture is still needed.
+Native SwiftUI renders from the 14 October 2026 simulator test run show the Me overview and layout editor without personal records. They retain their original dates and do not show the new conversation-starter behavior or verify a physical device. The architecture and workflow diagrams were created on 27 October; they are explanatory diagrams, not app screenshots.
 
 ![Metis: Current native app areas and the supporting service. Diagram, not an app screenshot.](assets/screenshots/metis-current.svg)
 
@@ -66,13 +71,21 @@ The former web HUD is no longer used to represent the current product. These sou
 
 *Workflow diagram · 2026-10-27. A proposed change passes through review, durable receipts and a guarded result. Diagram, not an app screenshot.*
 
+![Metis: Me overview rendered by the native SwiftUI test suite with an unpaired app and unavailable personal data. Historical simulator test render, not a physical-device capture.](assets/screenshots/metis-me-native-2026-10-14.png)
+
+*Native UI test render · 2026-10-14. Me overview rendered by the native SwiftUI test suite with an unpaired app and unavailable personal data. Historical simulator test render, not a physical-device capture.*
+
+![Metis: Customize Me rendered by the native SwiftUI test suite with default layout settings. Historical simulator test render; no personal records are shown.](assets/screenshots/metis-customize-native-2026-10-14.png)
+
+*Native UI test render · 2026-10-14. Customize Me rendered by the native SwiftUI test suite with default layout settings. Historical simulator test render; no personal records are shown.*
+
 ## Mnemosyne · The Long Way Home
 
 Mnemosyne is the assistant-DM, archivist and railway bot behind The Long Way Home, an asynchronous Discord roleplaying campaign. It connects original scene evidence, a human-maintained Obsidian vault and persistent runtime state, while separating private preparation from player-facing information.
 
 **Type:** Private application · **Technologies:** Python, Discord.py, SQLite
 
-Source reviewed: 2026-10-27.
+Source reviewed: 2026-11-02.
 
 ### The challenge
 
@@ -90,6 +103,10 @@ Discord ingestion follows the configured RP watchlist and keeps child threads as
 
 The same project runs deterministic campaign services: railway displays, a live-map overlay, travel context and the day/night cycle. This combination makes it a substantial systems project as well as a narrative tool. The image gallery includes the current map asset and an architecture diagram, not private Discord conversations or unreleased campaign secrets. The map is project artwork retained from September, reviewed again for this update.
 
+### Reliable background work
+
+Recent reliability work makes scheduled public cards quieter and safer to recover after a restart. Publication is serialized for each output, and recent bot-authored dated headings are checked before a card is sent. If that history cannot be checked, the post waits instead of risking a duplicate. Recovery considers only the current due cycle and disables mentions. AI tasks also share a bounded cooldown when provider credits are exhausted, leaving evidence queued for a later recovery probe. These are source-verified safeguards; this portfolio review does not certify current service health, account credit availability or successful publication of a particular post.
+
 **Capabilities**
 
 - Discord scene and thread archival with original evidence links
@@ -98,6 +115,7 @@ The same project runs deterministic campaign services: railway displays, a live-
 - Railway schedules, map overlays and day/night displays
 - Approval queues for suggestions and NPC drafts
 - Audience-aware retrieval and controlled vault synchronization
+- Quiet scheduled cards with restart duplicate checks and bounded AI-credit recovery
 
 [Open project details](https://devilishdagon.github.io/portfolio/#project=mnemosyne)
 
@@ -117,7 +135,7 @@ A private Xylem performance dashboard spanning ten business sectors and 32 repor
 
 **Type:** Private operational dashboard · **Technologies:** JavaScript, Cloudflare Workers, D1 / SQLite, XDM, Archie
 
-Source reviewed: 2026-10-27.
+Source reviewed: 2026-11-02.
 
 ### The problem
 
@@ -133,7 +151,7 @@ Read-only XDM and Archie adapters feed stored snapshots. Maintenance totals use 
 
 ### Recent development
 
-The 27 October interface refresh simplifies the page hierarchy and keeps the operational controls close to the reports. Other recent work adds the report finder, more reliable filtering, maintenance exports and clearer source behavior. The portfolio screenshots run this current frontend with fictional totals and no live connectors. They demonstrate the interface, not company performance, customer records or a claim that every KPI has a verified data source.
+The 29 October source updates improve refresh fairness and preserve the report a person is using. Large archives advance in bounded steps alongside smaller due reports, with requests kept serial under the shared source-session lease. Long runs recheck which sources are due. Project and quotation lead-time views retain their selected page and filters, offer a retry after a failed read, and prevent delayed results from replacing an open source-export view. The new lead-time screenshot uses this local frontend with fictional records. It illustrates the implemented interface, not company performance or proof that this revision is deployed to an internal host.
 
 **Capabilities**
 
@@ -143,10 +161,11 @@ The 27 October interface refresh simplifies the page hierarchy and keeps the ope
 - Search, filters, pagination and formula-safe CSV exports
 - Complete-snapshot publication and source freshness states
 - Responsive navigation, dark mode and a separate fictional-data demo
+- Fair source refresh scheduling and retained lead-time filters, pages and active views
 
 [Open project details](https://devilishdagon.github.io/portfolio/#project=kpi-dashboard)
 
-Captured 27 October 2026 from the current production frontend in an isolated local instance. All totals are fictional fixtures; employee names and internal links were removed from the capture copy. No live customer or sales data is included.
+The maintenance and report-finder captures retain their 27 October 2026 dates. The lead-time view was captured on 2 November from the local frontend containing the 29 October changes. All captures use isolated fictional fixtures; employee names and internal links are removed from the capture copy. No live customer or sales data is included.
 
 ![XBNL Performance Dashboard: Current maintenance interface with fictional totals and no live connectors.](assets/screenshots/xbnl-current-1.jpg)
 
@@ -155,6 +174,10 @@ Captured 27 October 2026 from the current production frontend in an isolated loc
 ![XBNL Performance Dashboard: Current report finder across 32 reports; isolated capture with no company records.](assets/screenshots/xbnl-current-2.jpg)
 
 *Application screenshot · 2026-10-27. Current report finder across 32 reports; isolated capture with no company records.*
+
+![XBNL Performance Dashboard: Project lead-time report from the 29 October frontend, captured locally with fictional project dates and totals. No source accounts or live records are connected.](assets/screenshots/xbnl-lead-times-2026-11-02.jpg)
+
+*Application screenshot · 2026-11-02. Project lead-time report from the 29 October frontend, captured locally with fictional project dates and totals. No source accounts or live records are connected.*
 
 ## SheetParcel
 

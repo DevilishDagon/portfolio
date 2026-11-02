@@ -14,7 +14,7 @@ for(const p of projects.filter(p=>p.featured))readme.push(`- [${p.title}](https:
 readme.push('','## Project directory','');
 const notes=['# Image provenance','',`Latest portfolio review: ${latest}. Image dates describe capture or creation, not deployment or physical-device verification.`,'',
 'New interface captures use public demos or isolated copies with fictional records. The XBNL copy removes employee names and internal links. Contractstudio uses fictional customers and invented tariffs. No source connectors, private accounts or hardware were changed for these captures.','',
-'Metis is now represented by diagrams of the native app and its action flow. A fresh sanitized iPhone screenshot remains unavailable. Historical display and documentation images keep their original dates. Original campaign artwork contains geography only, not private scene text or DM notes.',''];
+'Metis includes source-grounded diagrams and native SwiftUI simulator test renders from 14 October 2026. The renders contain no personal records and do not verify a physical phone or current push delivery. Historical display and documentation images keep their original dates. Original campaign artwork contains geography only, not private scene text or DM notes.',''];
 for(const p of projects){
  readme.push(`## ${p.title}`,'',p.description,'',`**Type:** ${p.status} · **Technologies:** ${p.stack.join(', ')}`,'');
  if(p.reviewedAt)readme.push(`Source reviewed: ${p.reviewedAt}.`,'');

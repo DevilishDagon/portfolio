@@ -1,19 +1,21 @@
 # Image provenance
 
-Latest portfolio review: 2026-10-27. Image dates describe capture or creation, not deployment or physical-device verification.
+Latest portfolio review: 2026-11-02. Image dates describe capture or creation, not deployment or physical-device verification.
 
 New interface captures use public demos or isolated copies with fictional records. The XBNL copy removes employee names and internal links. Contractstudio uses fictional customers and invented tariffs. No source connectors, private accounts or hardware were changed for these captures.
 
-Metis is now represented by diagrams of the native app and its action flow. A fresh sanitized iPhone screenshot remains unavailable. Historical display and documentation images keep their original dates. Original campaign artwork contains geography only, not private scene text or DM notes.
+Metis includes source-grounded diagrams and native SwiftUI simulator test renders from 14 October 2026. The renders contain no personal records and do not verify a physical phone or current push delivery. Historical display and documentation images keep their original dates. Original campaign artwork contains geography only, not private scene text or DM notes.
 
 ## Metis
 
-The former web HUD is no longer used to represent the current product. These source-grounded diagrams explain the current native app and action flow; they are not iPhone screenshots. A recent, sanitized device capture is still needed.
+Native SwiftUI renders from the 14 October 2026 simulator test run show the Me overview and layout editor without personal records. They retain their original dates and do not show the new conversation-starter behavior or verify a physical device. The architecture and workflow diagrams were created on 27 October; they are explanatory diagrams, not app screenshots.
 
 | File | Type | Captured / created | Caption |
 | --- | --- | --- | --- |
 | [metis-current.svg](assets/screenshots/metis-current.svg) | Architecture diagram | 2026-10-27 | Current native app areas and the supporting service. Diagram, not an app screenshot. |
 | [metis-actions.svg](assets/screenshots/metis-actions.svg) | Workflow diagram | 2026-10-27 | A proposed change passes through review, durable receipts and a guarded result. Diagram, not an app screenshot. |
+| [metis-me-native-2026-10-14.png](assets/screenshots/metis-me-native-2026-10-14.png) | Native UI test render | 2026-10-14 | Me overview rendered by the native SwiftUI test suite with an unpaired app and unavailable personal data. Historical simulator test render, not a physical-device capture. |
+| [metis-customize-native-2026-10-14.png](assets/screenshots/metis-customize-native-2026-10-14.png) | Native UI test render | 2026-10-14 | Customize Me rendered by the native SwiftUI test suite with default layout settings. Historical simulator test render; no personal records are shown. |
 
 ## Mnemosyne · The Long Way Home
 
@@ -26,12 +28,13 @@ Original campaign railway artwork plus a public-safe architecture diagram. No pr
 
 ## XBNL Performance Dashboard
 
-Captured 27 October 2026 from the current production frontend in an isolated local instance. All totals are fictional fixtures; employee names and internal links were removed from the capture copy. No live customer or sales data is included.
+The maintenance and report-finder captures retain their 27 October 2026 dates. The lead-time view was captured on 2 November from the local frontend containing the 29 October changes. All captures use isolated fictional fixtures; employee names and internal links are removed from the capture copy. No live customer or sales data is included.
 
 | File | Type | Captured / created | Caption |
 | --- | --- | --- | --- |
 | [xbnl-current-1.jpg](assets/screenshots/xbnl-current-1.jpg) | Application screenshot | 2026-10-27 | Current maintenance interface with fictional totals and no live connectors. |
 | [xbnl-current-2.jpg](assets/screenshots/xbnl-current-2.jpg) | Application screenshot | 2026-10-27 | Current report finder across 32 reports; isolated capture with no company records. |
+| [xbnl-lead-times-2026-11-02.jpg](assets/screenshots/xbnl-lead-times-2026-11-02.jpg) | Application screenshot | 2026-11-02 | Project lead-time report from the 29 October frontend, captured locally with fictional project dates and totals. No source accounts or live records are connected. |
 
 ## SheetParcel
 

@@ -4,7 +4,7 @@
     "title": "Metis",
     "category": "AI & agents",
     "tagline": "A personal companion that carries context into everyday action.",
-    "description": "Metis brings conversation, planning, reminders, personal memory and wellbeing into a native iPhone workspace. The current app is organized around Today, Plan, Ask, Care and Me, backed by a Python service that keeps actions tied to the records and permissions behind them.",
+    "description": "Metis brings conversation, planning, reminders, personal memory and wellbeing into a native iPhone workspace. Its Today, Plan, Ask, Care and Me areas connect to a Python service, with reviewable actions and opt-in conversation starters that respect context and notification preferences.",
     "stack": [
       "SwiftUI",
       "Python",
@@ -24,13 +24,16 @@
       "Tomorrow preparation with evidence and calendar freshness",
       "Inspectable memory, projects, people and personal preferences",
       "Offline action queue, replay protection and guarded undo",
-      "HealthKit, medication and Finance workspaces"
+      "HealthKit, medication and Finance workspaces",
+      "Opt-in iPhone conversation starters with quiet hours, daily limits and unanswered-message backoff"
     ],
-    "capture": "Architecture diagram · Workflow diagram",
+    "capture": "Architecture and workflow diagrams · Native UI test renders",
     "link": null,
     "images": [
       "assets/screenshots/metis-current.svg",
-      "assets/screenshots/metis-actions.svg"
+      "assets/screenshots/metis-actions.svg",
+      "assets/screenshots/metis-me-native-2026-10-14.png",
+      "assets/screenshots/metis-customize-native-2026-10-14.png"
     ],
     "featured": true,
     "caseStudy": [
@@ -47,12 +50,16 @@
         "text": "The SwiftUI client talks to a Flask mobile API. SQLite stores durable records and request receipts, while background jobs handle agreed follow-ups and synchronization. Calendar and project edits proposed in conversation are reviewed before application. Persistent request identifiers make retries safe, revision checks reject stale actions, and the mobile queue distinguishes cached content and unconfirmed changes from acknowledged results."
       },
       {
+        "title": "Starting the conversation",
+        "text": "The latest backend work lets Metis open a conversation in the iPhone app when the owner opts in. A fresh, deliberately shared workplace label can prompt a short greeting; an afternoon check-in can follow a period without interaction. Quiet hours, notification permission, daily limits and spacing control when a message is allowed, and unanswered starters cause it to back off. Chat history, the From Metis inbox and the push request are saved together, with duplicate protection. Replies return to the same conversation. This uses shared place context, not a claim of continuous tracking or exact arrival detection."
+      },
+      {
         "title": "Current focus",
-        "text": "Recent work adds actionable Today cards, category preferences, preparation for tomorrow, configurable Me cards and project follow-through. The latest inspected native source uses Today, Plan, Ask, Care and Me. Health and Finance are personal organizational tools, not medical advice or proof of banking availability. This review checks source behavior; it does not claim a new App Store release, a physical-device test or a successful push delivery."
+        "text": "Current work combines proactive conversation with actionable Today cards, tomorrow preparation, configurable Me cards and project follow-through. The native app retains Today, Plan, Ask, Care and Me. Health and Finance are personal organizational tools, not medical advice or proof of banking availability. The conversation-starter implementation is verified in source; this portfolio review does not establish notification display on a physical phone or a new app release. Native test renders illustrate the Me interface with unavailable data and default settings, alongside diagrams that explain the architecture."
       }
     ],
-    "mediaNote": "The former web HUD is no longer used to represent the current product. These source-grounded diagrams explain the current native app and action flow; they are not iPhone screenshots. A recent, sanitized device capture is still needed.",
-    "reviewedAt": "2026-10-27",
+    "mediaNote": "Native SwiftUI renders from the 14 October 2026 simulator test run show the Me overview and layout editor without personal records. They retain their original dates and do not show the new conversation-starter behavior or verify a physical device. The architecture and workflow diagrams were created on 27 October; they are explanatory diagrams, not app screenshots.",
+    "reviewedAt": "2026-11-02",
     "media": [
       {
         "src": "assets/screenshots/metis-current.svg",
@@ -65,6 +72,18 @@
         "kind": "Workflow diagram",
         "caption": "A proposed change passes through review, durable receipts and a guarded result. Diagram, not an app screenshot.",
         "capturedAt": "2026-10-27"
+      },
+      {
+        "src": "assets/screenshots/metis-me-native-2026-10-14.png",
+        "kind": "Native UI test render",
+        "caption": "Me overview rendered by the native SwiftUI test suite with an unpaired app and unavailable personal data. Historical simulator test render, not a physical-device capture.",
+        "capturedAt": "2026-10-14"
+      },
+      {
+        "src": "assets/screenshots/metis-customize-native-2026-10-14.png",
+        "kind": "Native UI test render",
+        "caption": "Customize Me rendered by the native SwiftUI test suite with default layout settings. Historical simulator test render; no personal records are shown.",
+        "capturedAt": "2026-10-14"
       }
     ]
   },
@@ -87,7 +106,8 @@
       "Persistent creative projects, alternatives, revisions and editorial preferences",
       "Railway schedules, map overlays and day/night displays",
       "Approval queues for suggestions and NPC drafts",
-      "Audience-aware retrieval and controlled vault synchronization"
+      "Audience-aware retrieval and controlled vault synchronization",
+      "Quiet scheduled cards with restart duplicate checks and bounded AI-credit recovery"
     ],
     "capture": "Project artwork · Architecture diagram",
     "link": null,
@@ -112,10 +132,14 @@
       {
         "title": "Beyond conversation",
         "text": "The same project runs deterministic campaign services: railway displays, a live-map overlay, travel context and the day/night cycle. This combination makes it a substantial systems project as well as a narrative tool. The image gallery includes the current map asset and an architecture diagram, not private Discord conversations or unreleased campaign secrets. The map is project artwork retained from September, reviewed again for this update."
+      },
+      {
+        "title": "Reliable background work",
+        "text": "Recent reliability work makes scheduled public cards quieter and safer to recover after a restart. Publication is serialized for each output, and recent bot-authored dated headings are checked before a card is sent. If that history cannot be checked, the post waits instead of risking a duplicate. Recovery considers only the current due cycle and disables mentions. AI tasks also share a bounded cooldown when provider credits are exhausted, leaving evidence queued for a later recovery probe. These are source-verified safeguards; this portfolio review does not certify current service health, account credit availability or successful publication of a particular post."
       }
     ],
     "mediaNote": "Original campaign railway artwork plus a public-safe architecture diagram. No private roleplay, player messages or DM secrets are shown.",
-    "reviewedAt": "2026-10-27",
+    "reviewedAt": "2026-11-02",
     "media": [
       {
         "src": "assets/screenshots/mnemosyne-map.png",
@@ -154,13 +178,15 @@
       "Quotation, sales, follow-up and lead-time views",
       "Search, filters, pagination and formula-safe CSV exports",
       "Complete-snapshot publication and source freshness states",
-      "Responsive navigation, dark mode and a separate fictional-data demo"
+      "Responsive navigation, dark mode and a separate fictional-data demo",
+      "Fair source refresh scheduling and retained lead-time filters, pages and active views"
     ],
     "capture": "Application screenshot",
     "link": null,
     "images": [
       "assets/screenshots/xbnl-current-1.jpg",
-      "assets/screenshots/xbnl-current-2.jpg"
+      "assets/screenshots/xbnl-current-2.jpg",
+      "assets/screenshots/xbnl-lead-times-2026-11-02.jpg"
     ],
     "featured": true,
     "caseStudy": [
@@ -178,11 +204,11 @@
       },
       {
         "title": "Recent development",
-        "text": "The 27 October interface refresh simplifies the page hierarchy and keeps the operational controls close to the reports. Other recent work adds the report finder, more reliable filtering, maintenance exports and clearer source behavior. The portfolio screenshots run this current frontend with fictional totals and no live connectors. They demonstrate the interface, not company performance, customer records or a claim that every KPI has a verified data source."
+        "text": "The 29 October source updates improve refresh fairness and preserve the report a person is using. Large archives advance in bounded steps alongside smaller due reports, with requests kept serial under the shared source-session lease. Long runs recheck which sources are due. Project and quotation lead-time views retain their selected page and filters, offer a retry after a failed read, and prevent delayed results from replacing an open source-export view. The new lead-time screenshot uses this local frontend with fictional records. It illustrates the implemented interface, not company performance or proof that this revision is deployed to an internal host."
       }
     ],
-    "mediaNote": "Captured 27 October 2026 from the current production frontend in an isolated local instance. All totals are fictional fixtures; employee names and internal links were removed from the capture copy. No live customer or sales data is included.",
-    "reviewedAt": "2026-10-27",
+    "mediaNote": "The maintenance and report-finder captures retain their 27 October 2026 dates. The lead-time view was captured on 2 November from the local frontend containing the 29 October changes. All captures use isolated fictional fixtures; employee names and internal links are removed from the capture copy. No live customer or sales data is included.",
+    "reviewedAt": "2026-11-02",
     "media": [
       {
         "src": "assets/screenshots/xbnl-current-1.jpg",
@@ -195,6 +221,12 @@
         "kind": "Application screenshot",
         "caption": "Current report finder across 32 reports; isolated capture with no company records.",
         "capturedAt": "2026-10-27"
+      },
+      {
+        "src": "assets/screenshots/xbnl-lead-times-2026-11-02.jpg",
+        "kind": "Application screenshot",
+        "caption": "Project lead-time report from the 29 October frontend, captured locally with fictional project dates and totals. No source accounts or live records are connected.",
+        "capturedAt": "2026-11-02"
       }
     ]
   },
