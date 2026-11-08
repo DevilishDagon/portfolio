@@ -1,12 +1,15 @@
 name: WK-RC05 FAP compiler
 on:
   push:
-    branches:
-      - wkrc05-fap-build
+    branches: [wkrc05-fap-build]
   workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        firmware: [official, momentum]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -14,15 +17,20 @@ jobs:
           python-version: '3.11'
       - name: Install uFBT
         run: python -m pip install --upgrade ufbt
-      - name: Update Flipper SDK
+      - name: Update SDK
         working-directory: flipper_wkrc05
-        run: ufbt update --channel release
+        run: |
+          if [ "${{ matrix.firmware }}" = "official" ]; then
+            ufbt update --channel release
+          else
+            ufbt update --index-url=https://up.momentum-fw.dev/firmware/directory.json
+          fi
       - name: Compile
         working-directory: flipper_wkrc05
         run: ufbt
       - name: Upload app
         uses: actions/upload-artifact@v4
         with:
-          name: WK_RC05_Official_FAP
+          name: WK_RC05_${{ matrix.firmware }}_FAP
           path: flipper_wkrc05/dist/*.fap
           if-no-files-found: error
