@@ -1,0 +1,28 @@
+name: WK-RC05 FAP compiler
+on:
+  push:
+    branches:
+      - wkrc05-fap-build
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install uFBT
+        run: python -m pip install --upgrade ufbt
+      - name: Update Flipper SDK
+        working-directory: flipper_wkrc05
+        run: ufbt update --index-url=https://up.momentum-fw.dev/firmware/directory.json
+      - name: Compile
+        working-directory: flipper_wkrc05
+        run: ufbt
+      - name: Upload app
+        uses: actions/upload-artifact@v4
+        with:
+          name: WK_RC05_Auto_Trainer_FAP
+          path: flipper_wkrc05/dist/*.fap
+          if-no-files-found: error
